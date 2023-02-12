@@ -27,15 +27,15 @@
       >
         <article class="bg-green-500 p-8 rounded-lg w-full md:w-4/5">
           <h3 class="text-3xl text-white">Deposit</h3>
-          <h2 class="text-white text-3xl">$00</h2>
+          <h2 class="text-white text-3xl">$<span id="deposit">00</span></h2>
         </article>
         <article class="bg-orange-400 p-8 rounded-lg w-full md:w-4/5">
           <h3 class="text-3xl text-white">Withdraw</h3>
-          <h2 class="text-white text-3xl">$00</h2>
+          <h2 class="text-white text-3xl">$<span id="withdraw">00</span></h2>
         </article>
         <article class="bg-purple-600 p-8 rounded-lg w-full md:w-4/5">
           <h3 class="text-3xl text-white">Balance</h3>
-          <h2 class="text-white text-3xl">$1240</h2>
+          <h2 class="text-white text-3xl">$<span id="balance">1240</span></h2>
         </article>
       </section>
       <section
@@ -51,11 +51,11 @@
             name=""
             id="deposit-field"
             placeholder="amount"
-            required
           />
           <br />
           <button
             class="bg-indigo-600 px-4 py-2 rounded-md duration-300 hover:bg-blue-900"
+            id="deposit-btn"
           >
             Deposit
           </button>
@@ -68,13 +68,13 @@
             class="py-2 px-1 mt-2 mb-6 lg:w-1/2 rounded-md text-black duration-300 focus:outline-0 focus:ring-2 ring-white"
             type="number"
             name=""
-            id="deposit-field"
+            id="withdraw-field"
             placeholder="amount"
-            required
           />
           <br />
           <button
             class="bg-pink-700 px-4 py-2 rounded-md duration-300 hover:bg-pink-900"
+            id="withdraw-btn"
           >
             Withdraw
           </button>
