@@ -8,8 +8,8 @@ const password = document.getElementById('password');
 loginBtn.addEventListener('click', function (e) {
     e.preventDefault();
     if(email.value === 'mohammadrobin636@gmail.com' && password.value === '12345678') {
-        console.log('valid');
+        location.href = 'gateway.html';
     } else {
-        console.log('Invalid');
+        alert('incorrect value');
     }
 });

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./images/wallet.png" type="image/x-icon" />
+    <title>Wallet</title>
+    <style>
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 class="text-5xl text-center mt-12">
+        Let's get some
+        <span class="text-purple-800 font-semibold">Moooooney!!!</span>
+      </h1>
+      <section
+        class="flex flex-col md:flex-row justify-center items-center gap-6 my-12 w-4/5 mx-auto"
+      >
+        <article class="bg-green-500 p-8 rounded-lg w-full md:w-4/5">
+          <h3 class="text-3xl text-white">Deposit</h3>
+          <h2 class="text-white text-3xl">$00</h2>
+        </article>
+        <article class="bg-orange-400 p-8 rounded-lg w-full md:w-4/5">
+          <h3 class="text-3xl text-white">Withdraw</h3>
+          <h2 class="text-white text-3xl">$00</h2>
+        </article>
+        <article class="bg-purple-600 p-8 rounded-lg w-full md:w-4/5">
+          <h3 class="text-3xl text-white">Balance</h3>
+          <h2 class="text-white text-3xl">$1240</h2>
+        </article>
+      </section>
+      <section
+        class="flex flex-col md:flex-row gap-6 lg:gap-12 justify-center items-center w-4/5 mx-auto"
+      >
+        <article
+          class="p-6 bg-gradient-to-r from-sky-500 to-indigo-700 text-white rounded-lg w-full"
+        >
+          <h3 class="text-3xl">Deposit Amount</h3>
+          <input
+            class="py-2 px-1 mt-2 mb-6 lg:w-1/2 rounded-md text-black duration-300 focus:outline-0 focus:ring-2 ring-white"
+            type="number"
+            name=""
+            id="deposit-field"
+            placeholder="amount"
+            required
+          />
+          <br />
+          <button
+            class="bg-indigo-600 px-4 py-2 rounded-md duration-300 hover:bg-blue-900"
+          >
+            Deposit
+          </button>
+        </article>
+        <article
+          class="p-6 bg-gradient-to-l from-purple-500 to-pink-500 text-white rounded-lg w-full"
+        >
+          <h3 class="text-3xl">Withdraw Amount</h3>
+          <input
+            class="py-2 px-1 mt-2 mb-6 lg:w-1/2 rounded-md text-black duration-300 focus:outline-0 focus:ring-2 ring-white"
+            type="number"
+            name=""
+            id="deposit-field"
+            placeholder="amount"
+            required
+          />
+          <br />
+          <button
+            class="bg-pink-700 px-4 py-2 rounded-md duration-300 hover:bg-pink-900"
+          >
+            Withdraw
+          </button>
+        </article>
+      </section>
+    </main>
+    <script src="./gateway.js"></script>
+  </body>
+</html>
