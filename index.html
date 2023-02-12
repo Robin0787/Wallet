@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./images/wallet.png" type="image/x-icon" />
+    <title>Wallet</title>
+  </head>
+  <body>
+    <main class="flex flex-col-reverse md:flex-row w-full lg:h-screen">
+      <section class="w-full flex flex-col items-center">
+        <h1 class="text-4xl text-center mt-8 lg:mt-40">Login</h1>
+        <form class="w-3/5 py-6 mt-4">
+          <label class="text-slate-600" for="email">Email</label><br />
+          <input
+            class="py-2 px-1 mt-1 mb-10 shadow-md w-full rounded-md duration-300 focus:outline-0 focus:shadow-none focus:ring-1 ring-black"
+            type="email"
+            name=""
+            id="email"
+            placeholder="name@example.com"
+            required
+          />
+          <br />
+          <label class="text-slate-600" for="password">Password</label><br />
+          <input
+            class="py-2 px-1 mb-10 mt-1 shadow-md w-full rounded-md duration-300 focus:outline-0 focus:shadow-none focus:ring-1 ring-black"
+            type="password"
+            name=""
+            id="password"
+            required
+            placeholder="password"
+          />
+          <button
+            class="border-0 bg-black text-white w-full rounded-sm mt-4 py-3 duration-300 hover:shadow-xl"
+            id="login-btn"
+          >
+            Login
+          </button>
+        </form>
+      </section>
+      <section class="w-full flex items-center justify-center">
+        <img class="w-full" src="./images/banner.webp" alt="" />
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
