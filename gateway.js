@@ -20,8 +20,9 @@ withdrawBtn.addEventListener('click', forWithdrawBtn);
 
 function forDepositBtn () {
     const amount = parseFloat(depositField.value);
+
     if(amount > 0) {
-        setDepositsValue();
+        setDepositsValue(amount);
         setBalance(amount,'add'); 
         depositField.value = '';
     } else {
@@ -30,12 +31,12 @@ function forDepositBtn () {
 }
 
 function forWithdrawBtn () {
-    const tk = parseFloat(balance.innerHTML);
+    const totalBalance = parseFloat(balance.innerHTML);
     const amount = parseFloat(withdrawField.value);
     
     if(amount > 0) {
-        if(tk >= amount) {
-            setWithdrawsValue();
+        if(totalBalance >= amount) {
+            setWithdrawsValue(amount);
             setBalance(amount,'subtract');
             withdrawField.value = '';
         } else {
@@ -50,13 +51,11 @@ function forWithdrawBtn () {
 }
 
 
-function setDepositsValue () {
-    const amount = parseFloat(depositField.value);
+function setDepositsValue (amount) {
     deposit.innerHTML = parseFloat(deposit.innerText) + amount;
 }
 
-function setWithdrawsValue () {
-    const amount = parseFloat(withdrawField.value);
+function setWithdrawsValue (amount) {
     withdraw.innerHTML = parseFloat(withdraw.innerHTML) + amount;
 }
 
