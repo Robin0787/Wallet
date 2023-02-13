@@ -25,7 +25,10 @@ function forDepositBtn () {
         setDepositsValue(amount);
         setBalance(amount,'add'); 
         depositField.value = '';
-    } else {
+    } else if (amount == 0) {
+        alert('Put a number that is greater than 0');
+    }
+    else {
         alert('Put a positive number');
     }
 }
